@@ -13,6 +13,7 @@
             color: #f8fafc;
             scroll-behavior: smooth;
             -webkit-tap-highlight-color: transparent;
+            font-size: 16px; /* Base font size */
         }
         .glass {
             background: rgba(15, 23, 42, 0.9);
@@ -51,9 +52,9 @@
         .section-tag {
             background: rgba(56, 189, 248, 0.1);
             color: #38bdf8;
-            padding: 4px 12px;
+            padding: 6px 16px;
             border-radius: 99px;
-            font-size: 0.7rem;
+            font-size: 0.85rem;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 0.05em;
@@ -61,306 +62,256 @@
         }
     </style>
 </head>
-<body class="antialiased">
+<body class="antialiased text-slate-200">
 
     <!-- Navigasi -->
     <nav class="fixed top-0 w-full z-[100] glass">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 h-16 md:h-20 flex items-center justify-between">
             <div class="flex items-center space-x-2">
-                <div class="w-8 h-8 md:w-10 md:h-10 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-lg md:rounded-xl flex items-center justify-center font-black text-lg md:text-xl text-white shadow-lg shadow-blue-500/30">4A</div>
+                <div class="w-10 h-10 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-xl flex items-center justify-center font-black text-xl text-white shadow-lg shadow-blue-500/30">4A</div>
                 <div class="flex flex-col">
-                    <span class="text-base md:text-lg font-bold tracking-tighter leading-none text-white">Car Rental</span>
-                    <span class="text-[8px] md:text-[10px] text-slate-400 font-medium">PREMIUM SELECTION</span>
+                    <span class="text-lg font-bold tracking-tighter leading-none text-white">Car Rental</span>
+                    <span class="text-[10px] md:text-xs text-blue-400 font-bold uppercase tracking-wider">Muar Specialist</span>
                 </div>
             </div>
-            <div class="hidden md:flex space-x-8 text-sm font-semibold text-slate-400">
+            <div class="hidden lg:flex space-x-8 text-sm font-semibold text-slate-400">
                 <a href="#kelebihan" class="hover:text-blue-400 transition">Kelebihan</a>
                 <a href="#fleet" class="hover:text-blue-400 transition">Koleksi Jentera</a>
+                <a href="#testimoni" class="hover:text-blue-400 transition">Apa Kata Orang</a>
                 <a href="#promo" class="hover:text-blue-400 transition">Promo</a>
             </div>
-            <a href="https://wa.me/60123456789" class="bg-blue-600 hover:bg-blue-500 text-white px-4 py-2 md:px-6 md:py-2.5 rounded-full text-xs md:text-sm font-bold transition-all hover:scale-105 active:scale-95 shadow-lg shadow-blue-900/40">
+            <a href="https://wa.me/60123456789" class="bg-blue-600 hover:bg-blue-500 text-white px-5 py-2.5 rounded-full text-sm font-bold transition-all hover:scale-105 active:scale-95 shadow-lg shadow-blue-900/40">
                 Tempah Slot
             </a>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="relative pt-32 md:pt-44 pb-16 md:pb-20 px-4 md:px-6 overflow-hidden">
-        <!-- Background Glow -->
-        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[400px] md:h-[600px] bg-blue-600/10 blur-[80px] md:blur-[120px] rounded-full -z-10"></div>
+    <section class="relative pt-32 md:pt-44 pb-16 md:pb-24 px-4 md:px-6 overflow-hidden">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[500px] md:h-[700px] bg-blue-600/10 blur-[100px] md:blur-[140px] rounded-full -z-10"></div>
         
         <div class="max-w-5xl mx-auto text-center">
-            <div class="inline-flex mb-4 md:mb-6">
-                <span class="section-tag">🚗 NO. 1 DI LEMBAH KLANG</span>
+            <div class="inline-flex mb-6">
+                <span class="section-tag">🚗 SEWAAN KERETA NO. 1 DI MUAR & SEKITARNYA</span>
             </div>
-            <h1 class="text-3xl sm:text-5xl md:text-8xl font-black mb-6 md:mb-8 leading-[1.1] tracking-tight">
+            <h1 class="text-4xl sm:text-6xl md:text-8xl font-black mb-6 md:mb-8 leading-[1.1] tracking-tight text-white">
                 Sewa Kereta Macam <br class="hidden sm:block"><span class="gradient-text">Kereta Sendiri.</span>
             </h1>
-            <p class="text-lg md:text-2xl font-bold mb-4 text-white">Selesa, Selamat & Sifar Drama! 🚗💨</p>
-            <p class="max-w-2xl mx-auto text-slate-400 text-sm md:text-xl mb-10 md:mb-12 leading-relaxed px-4 md:px-0">
-                Dah serik sewa kereta yang berbau, semput, dan banyak 'hidden cost'? Tukar ke <span class="text-white font-semibold underline decoration-blue-500 decoration-2 underline-offset-4">4A Car Rental</span> – Di mana kualiti pemanduan anda adalah maruah kami.
+            <p class="text-xl md:text-3xl font-bold mb-4 text-white">Selesa, Selamat & Sifar Drama! 🚗💨</p>
+            <p class="max-w-3xl mx-auto text-slate-400 text-base md:text-xl mb-10 md:mb-12 leading-relaxed px-4 md:px-0">
+                Dah serik sewa kereta yang berbau dan semput? Tukar ke <span class="text-white font-semibold underline decoration-blue-500 decoration-2 underline-offset-4">4A Car Rental</span> – Dari Muar untuk warga Muar. Kualiti anda adalah maruah kami.
             </p>
 
-            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 md:gap-5 px-4 md:px-0">
-                <a href="#fleet" class="w-full sm:w-auto px-8 py-4 md:px-10 md:py-5 bg-white text-black font-extrabold rounded-xl md:rounded-2xl hover:bg-blue-50 transition-all text-base md:text-lg shadow-xl">
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-5 px-4 md:px-0">
+                <a href="#fleet" class="w-full sm:w-auto px-10 py-4 md:py-5 bg-white text-black font-extrabold rounded-xl md:rounded-2xl hover:bg-blue-50 transition-all text-lg shadow-xl">
                     Check Slot Sekarang!
                 </a>
-                <a href="#kelebihan" class="w-full sm:w-auto px-8 py-4 md:px-10 md:py-5 bg-slate-900 text-white border border-slate-800 font-extrabold rounded-xl md:rounded-2xl hover:bg-slate-800 transition text-base md:text-lg">
-                    Kenapa Kami?
+                <a href="https://wa.me/60123456789" class="w-full sm:w-auto px-10 py-4 md:py-5 bg-slate-900 text-white border border-slate-800 font-extrabold rounded-xl md:rounded-2xl hover:bg-slate-800 transition text-lg">
+                    Hubungi Kami
                 </a>
             </div>
 
             <!-- Trust Bar -->
-            <div class="mt-16 md:mt-20 pt-10 border-t border-slate-900/50 flex flex-wrap justify-center gap-6 md:gap-20">
+            <div class="mt-16 md:mt-24 pt-10 border-t border-slate-900/50 flex flex-wrap justify-center gap-10 md:gap-20">
                 <div class="text-center w-[40%] md:w-auto">
-                    <p class="text-2xl md:text-3xl font-black text-white">500+</p>
-                    <p class="text-[10px] md:text-xs font-bold text-slate-500 uppercase tracking-widest">Penyewa Puas</p>
+                    <p class="text-3xl md:text-4xl font-black text-white">500+</p>
+                    <p class="text-xs md:text-sm font-bold text-slate-500 uppercase tracking-widest">Penyewa Puas</p>
                 </div>
                 <div class="text-center w-[40%] md:w-auto">
-                    <p class="text-2xl md:text-3xl font-black text-white">100%</p>
-                    <p class="text-[10px] md:text-xs font-bold text-slate-500 uppercase tracking-widest">Kereta Wangi</p>
+                    <p class="text-3xl md:text-4xl font-black text-white">100%</p>
+                    <p class="text-xs md:text-sm font-bold text-slate-500 uppercase tracking-widest">Kereta Wangi</p>
                 </div>
                 <div class="text-center w-[40%] md:w-auto">
-                    <p class="text-2xl md:text-3xl font-black text-white">24j</p>
-                    <p class="text-[10px] md:text-xs font-bold text-slate-500 uppercase tracking-widest">Support Pantas</p>
+                    <p class="text-3xl md:text-4xl font-black text-white">24j</p>
+                    <p class="text-xs md:text-sm font-bold text-slate-500 uppercase tracking-widest">Pantas & Jujur</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Formula 4A Section -->
-    <section id="kelebihan" class="py-20 md:py-32 px-4 md:px-6 bg-slate-900/20">
+    <section id="kelebihan" class="py-16 md:py-24 px-4 md:px-6 bg-slate-900/20">
         <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-12 md:mb-20">
+            <div class="text-center mb-12 md:mb-16">
                 <span class="section-tag mb-4 inline-block">THE 4A PROMISE</span>
-                <h2 class="text-2xl md:text-6xl font-black mb-4 md:mb-6 text-white leading-tight">Ketenangan Minda Anda<br><span class="text-blue-500">Adalah Janji Kami.</span></h2>
-                <p class="text-slate-400 text-sm md:text-lg max-w-2xl mx-auto px-4">
-                    Kami bukan sekadar beri kunci. Kami beri jaminan kualiti melalui formula 4A yang tidak akan anda jumpa di tempat lain.
-                </p>
+                <h2 class="text-3xl md:text-5xl font-black mb-4 text-white leading-tight">Ketenangan Minda Anda<br><span class="text-blue-500">Adalah Janji Kami.</span></h2>
             </div>
             
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
                 <!-- AMAN -->
-                <div class="group p-8 md:p-10 rounded-[2rem] md:rounded-[2.5rem] bg-slate-900/50 border border-slate-800 hover:border-blue-500/50 transition-all duration-300">
-                    <div class="w-12 h-12 md:w-16 md:h-16 bg-blue-600/10 rounded-xl md:rounded-2xl flex items-center justify-center text-2xl md:text-3xl mb-6 md:mb-8 transition">🛡️</div>
-                    <h3 class="text-xl md:text-2xl font-black mb-3 md:mb-4 text-white uppercase tracking-tighter">AMAN</h3>
-                    <p class="text-slate-400 text-xs md:text-sm leading-relaxed">Bukan sekadar kereta jalan, tapi kereta yang dijaga rapi. Servis berkala, check tayar, dan brek. Keselamatan famili anda keutamaan kami.</p>
+                <div class="group p-8 md:p-10 rounded-[2rem] bg-slate-900/50 border border-slate-800 hover:border-blue-500/50 transition-all duration-300">
+                    <div class="w-12 h-12 md:w-16 md:h-16 bg-blue-600/10 rounded-2xl flex items-center justify-center text-3xl mb-6 transition">🛡️</div>
+                    <h3 class="text-xl md:text-2xl font-black mb-3 text-white uppercase tracking-tighter">AMAN</h3>
+                    <p class="text-slate-400 text-sm md:text-base leading-relaxed">Servis berkala, check tayar, dan brek. Keselamatan famili anda keutamaan kami di Muar.</p>
                 </div>
                 <!-- ADIL -->
-                <div class="group p-8 md:p-10 rounded-[2rem] md:rounded-[2.5rem] bg-slate-900/50 border border-slate-800 hover:border-blue-500/50 transition-all duration-300">
-                    <div class="w-12 h-12 md:w-16 md:h-16 bg-blue-600/10 rounded-xl md:rounded-2xl flex items-center justify-center text-2xl md:text-3xl mb-6 md:mb-8 transition">⚖️</div>
-                    <h3 class="text-xl md:text-2xl font-black mb-3 md:mb-4 text-white uppercase tracking-tighter">ADIL</h3>
-                    <p class="text-slate-400 text-xs md:text-sm leading-relaxed">Harga telus. Tak ada caj tersembunyi atau surcaj "pelik-pelik" di saat akhir. Apa yang anda nampak, itu yang anda bayar.</p>
+                <div class="group p-8 md:p-10 rounded-[2rem] bg-slate-900/50 border border-slate-800 hover:border-blue-500/50 transition-all duration-300">
+                    <div class="w-12 h-12 md:w-16 md:h-16 bg-blue-600/10 rounded-2xl flex items-center justify-center text-3xl mb-6 transition">⚖️</div>
+                    <h3 class="text-xl md:text-2xl font-black mb-3 text-white uppercase tracking-tighter">ADIL</h3>
+                    <p class="text-slate-400 text-sm md:text-base leading-relaxed">Harga telus. Tak ada caj tersembunyi. Apa yang anda nampak, itu yang anda bayar.</p>
                 </div>
                 <!-- AWESOME -->
-                <div class="group p-8 md:p-10 rounded-[2rem] md:rounded-[2.5rem] bg-slate-900/50 border border-slate-800 hover:border-blue-500/50 transition-all duration-300">
-                    <div class="w-12 h-12 md:w-16 md:h-16 bg-blue-600/10 rounded-xl md:rounded-2xl flex items-center justify-center text-2xl md:text-3xl mb-6 md:mb-8 transition">✨</div>
-                    <h3 class="text-xl md:text-2xl font-black mb-3 md:mb-4 text-white uppercase tracking-tighter">AWESOME</h3>
-                    <p class="text-slate-400 text-xs md:text-sm leading-relaxed">Wangi, Bersih, dan Aircond Sejuk Beku sebelum diserahkan. Masuk je terus rasa vibe baru, perjalanan jauh tak penat!</p>
+                <div class="group p-8 md:p-10 rounded-[2rem] bg-slate-900/50 border border-slate-800 hover:border-blue-500/50 transition-all duration-300">
+                    <div class="w-12 h-12 md:w-16 md:h-16 bg-blue-600/10 rounded-2xl flex items-center justify-center text-3xl mb-6 transition">✨</div>
+                    <h3 class="text-xl md:text-2xl font-black mb-3 text-white uppercase tracking-tighter">AWESOME</h3>
+                    <p class="text-slate-400 text-sm md:text-base leading-relaxed">Wangi, Bersih, dan Aircond Sejuk Beku. Masuk je terus rasa vibe kereta baru!</p>
                 </div>
                 <!-- AVAILABLE -->
-                <div class="group p-8 md:p-10 rounded-[2rem] md:rounded-[2.5rem] bg-slate-900/50 border border-slate-800 hover:border-blue-500/50 transition-all duration-300">
-                    <div class="w-12 h-12 md:w-16 md:h-16 bg-blue-600/10 rounded-xl md:rounded-2xl flex items-center justify-center text-2xl md:text-3xl mb-6 md:mb-8 transition">🚀</div>
-                    <h3 class="text-xl md:text-2xl font-black mb-3 md:mb-4 text-white uppercase tracking-tighter">AVAILABLE</h3>
-                    <p class="text-slate-400 text-xs md:text-sm leading-relaxed">Kompak jimat minyak hingga MPV luas. Proses booking laju—WhatsApp je, terus kami uruskan tanpa tunggu lama.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pain Points -->
-    <section class="py-20 md:py-32 px-4 md:px-6">
-        <div class="max-w-5xl mx-auto bg-gradient-to-br from-slate-900 to-black border border-white/5 rounded-[2.5rem] md:rounded-[3.5rem] p-8 md:p-20 relative overflow-hidden shadow-2xl">
-            <div class="absolute -top-24 -right-24 w-64 h-64 bg-red-600/10 blur-[80px] rounded-full"></div>
-            
-            <div class="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
-                <div>
-                    <span class="text-red-500 font-bold uppercase tracking-widest text-[10px] md:text-sm mb-4 block text-center md:text-left">Mimpi Ngeri Penyewa</span>
-                    <h2 class="text-2xl md:text-4xl font-black mb-8 leading-tight text-center md:text-left">Pernah Tak Kena <br class="hidden md:block"><span class="text-red-500">Mimpi Ngeri</span> Macam Ni?</h2>
-                    
-                    <div class="space-y-4 md:space-y-6">
-                        <div class="flex items-center space-x-3 md:space-x-4 bg-white/5 p-4 rounded-xl md:rounded-2xl border border-white/5">
-                            <span class="text-xl md:text-2xl text-red-500">❌</span>
-                            <p class="text-slate-300 text-xs md:text-sm font-medium">Kereta bau rokok atau hapak meloyakan.</p>
-                        </div>
-                        <div class="flex items-center space-x-3 md:space-x-4 bg-white/5 p-4 rounded-xl md:rounded-2xl border border-white/5">
-                            <span class="text-xl md:text-2xl text-red-500">❌</span>
-                            <p class="text-slate-300 text-xs md:text-sm font-medium">Enjin bunyi kasar, takut breakdown.</p>
-                        </div>
-                        <div class="flex items-center space-x-3 md:space-x-4 bg-white/5 p-4 rounded-xl md:rounded-2xl border border-white/5">
-                            <span class="text-xl md:text-2xl text-red-500">❌</span>
-                            <p class="text-slate-300 text-xs md:text-sm font-medium">Deposit kena 'makan' atau lambat pulangkan.</p>
-                        </div>
-                        <div class="flex items-center space-x-3 md:space-x-4 bg-white/5 p-4 rounded-xl md:rounded-2xl border border-white/5">
-                            <span class="text-xl md:text-2xl text-red-500">❌</span>
-                            <p class="text-slate-300 text-xs md:text-sm font-medium">Owner susah dihubungi bila ada masalah.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-blue-600/10 p-8 md:p-10 rounded-[2rem] md:rounded-[2.5rem] border border-blue-500/20 text-center md:text-left">
-                    <h3 class="text-xl md:text-2xl font-bold mb-4 md:mb-6 text-white">Tinggalkan Stres Tersebut!</h3>
-                    <p class="text-slate-400 text-xs md:text-sm mb-6 md:mb-8 leading-relaxed">
-                        Kami faham, sewa kereta patutnya memudahkan. Di 4A, kami uruskan segalanya supaya anda hanya perlu fikir destinasi sahaja.
-                    </p>
-                    <p class="text-lg md:text-xl font-bold text-blue-400 italic">Jom Alami Kualiti VIP Hari Ini!</p>
+                <div class="group p-8 md:p-10 rounded-[2rem] bg-slate-900/50 border border-slate-800 hover:border-blue-500/50 transition-all duration-300">
+                    <div class="w-12 h-12 md:w-16 md:h-16 bg-blue-600/10 rounded-2xl flex items-center justify-center text-3xl mb-6 transition">🚀</div>
+                    <h3 class="text-xl md:text-2xl font-black mb-3 text-white uppercase tracking-tighter">AVAILABLE</h3>
+                    <p class="text-slate-400 text-sm md:text-base leading-relaxed">Dari Axia ke MPV luas. WhatsApp je, terus kami hantar depan pintu rumah.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Koleksi Kereta (Fleet) -->
-    <section id="fleet" class="py-20 md:py-32 px-4 md:px-6 bg-slate-950">
+    <section id="fleet" class="py-16 md:py-24 px-4 md:px-6 bg-slate-950">
         <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-12 md:mb-20">
+            <div class="text-center mb-12 md:mb-16">
                 <span class="section-tag mb-4 inline-block">JENTERA TERSEDIA</span>
-                <h2 class="text-2xl md:text-6xl font-black mb-4 md:mb-6 text-white">Pilih Jentera Anda.</h2>
-                <p class="text-slate-400 text-xs md:text-lg max-w-2xl mx-auto px-4">
-                    Kadar harian telus. Kondisi kereta 5-Bintang.
-                </p>
+                <h2 class="text-3xl md:text-5xl font-black mb-4 text-white">Koleksi 'Jentera' 4A</h2>
+                <p class="text-slate-400 text-sm md:text-lg">Kualiti 5-Bintang, Harga Mampu Milik.</p>
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
                 <!-- Kereta 1: Axia -->
-                <div class="bg-slate-900 border border-slate-800 rounded-[2rem] md:rounded-[2.5rem] p-4 md:p-5 card-glow transition duration-500 group">
-                    <div class="car-image-container mb-6 md:mb-8">
+                <div class="bg-slate-900 border border-slate-800 rounded-[2.5rem] p-5 card-glow transition duration-500 group">
+                    <div class="car-image-container mb-6">
                         <img src="https://b2c-cdn.carsome.my/cdn-cgi/image/format=auto,quality=50,width=1296/B2C/4d5bb7ea-cb59-4cfb-b63c-bd6371d3da8c.jpg" alt="[Imej Perodua Axia]">
                     </div>
                     <div class="px-2 pb-2">
                         <div class="flex justify-between items-center mb-4">
-                            <h4 class="text-xl md:text-2xl font-black text-white">Axia</h4>
-                            <span class="px-2 md:px-3 py-1 bg-green-500/10 text-green-400 rounded-lg text-[8px] md:text-[10px] font-bold uppercase tracking-widest border border-green-500/20">Available</span>
+                            <h4 class="text-2xl font-black text-white">Axia</h4>
+                            <span class="px-3 py-1 bg-green-500/10 text-green-400 rounded-lg text-[10px] md:text-xs font-bold uppercase tracking-widest border border-green-500/20">Available</span>
                         </div>
-                        
-                        <div class="grid grid-cols-2 gap-2 md:gap-3 mb-6">
-                            <div class="flex items-center space-x-1 md:space-x-2 text-[8px] md:text-[10px] text-slate-500 font-bold uppercase tracking-tight">
-                                <span>👤 5 Seats</span>
-                            </div>
-                            <div class="flex items-center space-x-1 md:space-x-2 text-[8px] md:text-[10px] text-slate-500 font-bold uppercase tracking-tight">
-                                <span>⚙️ Auto</span>
-                            </div>
-                            <div class="flex items-center space-x-1 md:space-x-2 text-[8px] md:text-[10px] text-slate-500 font-bold uppercase tracking-tight">
-                                <span>❄️ Full AC</span>
-                            </div>
-                            <div class="flex items-center space-x-1 md:space-x-2 text-[8px] md:text-[10px] text-slate-500 font-bold uppercase tracking-tight">
-                                <span>⛽ Jimat</span>
-                            </div>
+                        <div class="grid grid-cols-2 gap-3 mb-6">
+                            <div class="flex items-center space-x-2 text-xs md:text-sm text-slate-400 font-medium"><span>👤 5 Seats</span></div>
+                            <div class="flex items-center space-x-2 text-xs md:text-sm text-slate-400 font-medium"><span>⚙️ Auto</span></div>
                         </div>
-
-                        <div class="flex items-center justify-between mb-6 md:mb-8">
-                            <div>
-                                <p class="text-[8px] md:text-[10px] text-slate-500 font-bold uppercase tracking-widest leading-none mb-1">Harian Dari</p>
-                                <p class="text-2xl md:text-3xl font-black text-blue-400 leading-none">RM1XX</p>
-                            </div>
+                        <div class="flex items-center justify-between mb-6">
+                            <p class="text-2xl md:text-3xl font-black text-blue-400">RM1XX<span class="text-xs text-slate-500 font-normal"> /hari</span></p>
                         </div>
-                        <a href="https://wa.me/60123456789" class="block w-full py-4 bg-white hover:bg-blue-600 hover:text-white text-black text-center font-black rounded-xl md:rounded-2xl transition duration-300 text-sm md:text-base">Tempah Slot</a>
+                        <a href="https://wa.me/60123456789" class="block w-full py-4 bg-white text-black text-center font-black rounded-2xl transition hover:bg-blue-600 hover:text-white text-sm md:text-base">Tempah Slot</a>
                     </div>
                 </div>
 
                 <!-- Kereta 2: Bezza -->
-                <div class="bg-slate-900 border border-slate-800 rounded-[2rem] md:rounded-[2.5rem] p-4 md:p-5 card-glow transition duration-500 group">
-                    <div class="car-image-container mb-6 md:mb-8">
+                <div class="bg-slate-900 border border-slate-800 rounded-[2.5rem] p-5 card-glow transition duration-500 group">
+                    <div class="car-image-container mb-6">
                         <img src="https://b2c-cdn.carsome.my/cdn-cgi/image/format=auto,quality=50,width=1296/B2C/81b9519f-9a32-498b-8913-ed66b0cfa0f5.jpg" alt="[Imej Perodua Bezza]">
                     </div>
                     <div class="px-2 pb-2">
                         <div class="flex justify-between items-center mb-4">
-                            <h4 class="text-xl md:text-2xl font-black text-white">Bezza</h4>
-                            <span class="px-2 md:px-3 py-1 bg-orange-500/10 text-orange-400 rounded-lg text-[8px] md:text-[10px] font-bold uppercase tracking-widest border border-orange-500/20">Hot Item!</span>
+                            <h4 class="text-2xl font-black text-white">Bezza</h4>
+                            <span class="px-3 py-1 bg-orange-500/10 text-orange-400 rounded-lg text-[10px] md:text-xs font-bold uppercase tracking-widest border border-orange-500/20">Hot Item!</span>
                         </div>
-                        
-                        <div class="grid grid-cols-2 gap-2 md:gap-3 mb-6">
-                            <div class="flex items-center space-x-1 md:space-x-2 text-[8px] md:text-[10px] text-slate-500 font-bold uppercase tracking-tight">
-                                <span>👤 5 Seats</span>
-                            </div>
-                            <div class="flex items-center space-x-1 md:space-x-2 text-[8px] md:text-[10px] text-slate-500 font-bold uppercase tracking-tight">
-                                <span>⚙️ Auto</span>
-                            </div>
-                            <div class="flex items-center space-x-1 md:space-x-2 text-[8px] md:text-[10px] text-slate-500 font-bold uppercase tracking-tight">
-                                <span>💼 Boot Luas</span>
-                            </div>
-                            <div class="flex items-center space-x-1 md:space-x-2 text-[8px] md:text-[10px] text-slate-500 font-bold uppercase tracking-tight">
-                                <span>⛽ Sedan</span>
-                            </div>
+                        <div class="grid grid-cols-2 gap-3 mb-6">
+                            <div class="flex items-center space-x-2 text-xs md:text-sm text-slate-400 font-medium"><span>👤 5 Seats</span></div>
+                            <div class="flex items-center space-x-2 text-xs md:text-sm text-slate-400 font-medium"><span>⚙️ Auto</span></div>
                         </div>
-
-                        <div class="flex items-center justify-between mb-6 md:mb-8">
-                            <div>
-                                <p class="text-[8px] md:text-[10px] text-slate-500 font-bold uppercase tracking-widest leading-none mb-1">Harian Dari</p>
-                                <p class="text-2xl md:text-3xl font-black text-blue-400 leading-none">RM1XX</p>
-                            </div>
+                        <div class="flex items-center justify-between mb-6">
+                            <p class="text-2xl md:text-3xl font-black text-blue-400">RM1XX<span class="text-xs text-slate-500 font-normal"> /hari</span></p>
                         </div>
-                        <a href="https://wa.me/60123456789" class="block w-full py-4 bg-white hover:bg-blue-600 hover:text-white text-black text-center font-black rounded-xl md:rounded-2xl transition duration-300 text-sm md:text-base">Tempah Slot</a>
+                        <a href="https://wa.me/60123456789" class="block w-full py-4 bg-white text-black text-center font-black rounded-2xl transition hover:bg-blue-600 hover:text-white text-sm md:text-base">Tempah Slot</a>
                     </div>
                 </div>
 
                 <!-- Kereta 3: Saga -->
-                <div class="bg-slate-900 border border-slate-800 rounded-[2rem] md:rounded-[2.5rem] p-4 md:p-5 card-glow transition duration-500 group">
-                    <div class="car-image-container mb-6 md:mb-8">
+                <div class="bg-slate-900 border border-slate-800 rounded-[2.5rem] p-5 card-glow transition duration-500 group">
+                    <div class="car-image-container mb-6">
                         <img src="https://b2c-cdn.carsome.my/cdn-cgi/image/format=auto,quality=50,width=1296/B2C/57f80eb0-f21c-4afc-9381-0dfb22fce9e4.jpg" alt="[Imej Proton Saga]">
                     </div>
                     <div class="px-2 pb-2">
                         <div class="flex justify-between items-center mb-4">
-                            <h4 class="text-xl md:text-2xl font-black text-white">Saga</h4>
-                            <span class="px-2 md:px-3 py-1 bg-green-500/10 text-green-400 rounded-lg text-[8px] md:text-[10px] font-bold uppercase tracking-widest border border-green-500/20">Available</span>
+                            <h4 class="text-2xl font-black text-white">Saga</h4>
+                            <span class="px-3 py-1 bg-green-500/10 text-green-400 rounded-lg text-[10px] md:text-xs font-bold uppercase tracking-widest border border-green-500/20">Available</span>
                         </div>
-                        
-                        <div class="grid grid-cols-2 gap-2 md:gap-3 mb-6">
-                            <div class="flex items-center space-x-1 md:space-x-2 text-[8px] md:text-[10px] text-slate-500 font-bold uppercase tracking-tight">
-                                <span>👤 5 Seats</span>
-                            </div>
-                            <div class="flex items-center space-x-1 md:space-x-2 text-[8px] md:text-[10px] text-slate-500 font-bold uppercase tracking-tight">
-                                <span>⚙️ Auto</span>
-                            </div>
-                            <div class="flex items-center space-x-1 md:space-x-2 text-[8px] md:text-[10px] text-slate-500 font-bold uppercase tracking-tight">
-                                <span>🛡️ Mantap</span>
-                            </div>
-                            <div class="flex items-center space-x-1 md:space-x-2 text-[8px] md:text-[10px] text-slate-500 font-bold uppercase tracking-tight">
-                                <span>⛽ Sedan</span>
-                            </div>
+                        <div class="grid grid-cols-2 gap-3 mb-6">
+                            <div class="flex items-center space-x-2 text-xs md:text-sm text-slate-400 font-medium"><span>👤 5 Seats</span></div>
+                            <div class="flex items-center space-x-2 text-xs md:text-sm text-slate-400 font-medium"><span>⚙️ Auto</span></div>
                         </div>
-
-                        <div class="flex items-center justify-between mb-6 md:mb-8">
-                            <div>
-                                <p class="text-[8px] md:text-[10px] text-slate-500 font-bold uppercase tracking-widest leading-none mb-1">Harian Dari</p>
-                                <p class="text-2xl md:text-3xl font-black text-blue-400 leading-none">RM1XX</p>
-                            </div>
+                        <div class="flex items-center justify-between mb-6">
+                            <p class="text-2xl md:text-3xl font-black text-blue-400">RM1XX<span class="text-xs text-slate-500 font-normal"> /hari</span></p>
                         </div>
-                        <a href="https://wa.me/60123456789" class="block w-full py-4 bg-white hover:bg-blue-600 hover:text-white text-black text-center font-black rounded-xl md:rounded-2xl transition duration-300 text-sm md:text-base">Tempah Slot</a>
+                        <a href="https://wa.me/60123456789" class="block w-full py-4 bg-white text-black text-center font-black rounded-2xl transition hover:bg-blue-600 hover:text-white text-sm md:text-base">Tempah Slot</a>
                     </div>
                 </div>
 
                 <!-- Kereta 4: Alza -->
-                <div class="bg-slate-900 border border-slate-800 rounded-[2rem] md:rounded-[2.5rem] p-4 md:p-5 card-glow transition duration-500 group">
-                    <div class="car-image-container mb-6 md:mb-8">
+                <div class="bg-slate-900 border border-slate-800 rounded-[2.5rem] p-5 card-glow transition duration-500 group">
+                    <div class="car-image-container mb-6">
                         <img src="https://b2c-cdn.carsome.my/B2C/2b006e66-2b59-4a56-ab24-064b0cbf66ec.jpg" alt="[Imej Perodua Alza]">
                     </div>
                     <div class="px-2 pb-2">
                         <div class="flex justify-between items-center mb-4">
-                            <h4 class="text-xl md:text-2xl font-black text-white">Alza</h4>
-                            <span class="px-2 md:px-3 py-1 bg-red-500/10 text-red-400 rounded-lg text-[8px] md:text-[10px] font-bold uppercase tracking-widest border border-red-500/20">Slot Terhad</span>
+                            <h4 class="text-2xl font-black text-white">Alza</h4>
+                            <span class="px-3 py-1 bg-red-500/10 text-red-400 rounded-lg text-[10px] md:text-xs font-bold uppercase tracking-widest border border-red-500/20">Slot Terhad</span>
                         </div>
-                        
-                        <div class="grid grid-cols-2 gap-2 md:gap-3 mb-6">
-                            <div class="flex items-center space-x-1 md:space-x-2 text-[8px] md:text-[10px] text-slate-500 font-bold uppercase tracking-tight">
-                                <span>👤 7 Seats</span>
-                            </div>
-                            <div class="flex items-center space-x-1 md:space-x-2 text-[8px] md:text-[10px] text-slate-500 font-bold uppercase tracking-tight">
-                                <span>⚙️ Auto</span>
-                            </div>
-                            <div class="flex items-center space-x-1 md:space-x-2 text-[8px] md:text-[10px] text-slate-500 font-bold uppercase tracking-tight">
-                                <span>👨‍👩‍👧‍👦 Family</span>
-                            </div>
-                            <div class="flex items-center space-x-1 md:space-x-2 text-[8px] md:text-[10px] text-slate-500 font-bold uppercase tracking-tight">
-                                <span>🚀 Baru</span>
-                            </div>
+                        <div class="grid grid-cols-2 gap-3 mb-6">
+                            <div class="flex items-center space-x-2 text-xs md:text-sm text-slate-400 font-medium"><span>👤 7 Seats</span></div>
+                            <div class="flex items-center space-x-2 text-xs md:text-sm text-slate-400 font-medium"><span>⚙️ Auto</span></div>
                         </div>
+                        <div class="flex items-center justify-between mb-6">
+                            <p class="text-2xl md:text-3xl font-black text-blue-400">RM2XX<span class="text-xs text-slate-500 font-normal"> /hari</span></p>
+                        </div>
+                        <a href="https://wa.me/60123456789" class="block w-full py-4 bg-white text-black text-center font-black rounded-2xl transition hover:bg-blue-600 hover:text-white text-sm md:text-base">Tempah Slot</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                        <div class="flex items-center justify-between mb-6 md:mb-8">
-                            <div>
-                                <p class="text-[8px] md:text-[10px] text-slate-500 font-bold uppercase tracking-widest leading-none mb-1">Harian Dari</p>
-                                <p class="text-2xl md:text-3xl font-black text-blue-400 leading-none">RM2XX</p>
-                            </div>
+    <!-- Testimoni Section -->
+    <section id="testimoni" class="py-16 md:py-24 px-4 md:px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12 md:mb-16">
+                <span class="section-tag mb-4 inline-block">TESTIMONI JUJUR</span>
+                <h2 class="text-3xl md:text-5xl font-black mb-4 text-white">Apa Kata "Orang Kita"<br><span class="text-blue-500">Yang Dah Cuba?</span></h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimoni 1 -->
+                <div class="bg-slate-900/40 p-8 md:p-10 rounded-[2.5rem] border border-slate-800 hover:border-blue-500/20 transition">
+                    <div class="flex text-yellow-500 mb-6 text-xl">⭐⭐⭐⭐⭐</div>
+                    <p class="text-slate-300 text-sm md:text-base leading-relaxed mb-8 italic">
+                        "Dah biasa sewa kereta area Muar ni, tapi 4A paling terbaik. Kereta Axia dia macam kereta baru keluar showroom! Bau wangi, aircond sejuk. Nak bawa famili pusing Tanjung Emas pun rasa bangga."
+                    </p>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-10 h-10 bg-blue-600/20 rounded-full flex items-center justify-center font-bold text-blue-400">H</div>
+                        <div>
+                            <p class="text-sm font-bold text-white">Haziq</p>
+                            <p class="text-xs text-slate-500 uppercase tracking-widest font-semibold">Parit Jawa</p>
                         </div>
-                        <a href="https://wa.me/60123456789" class="block w-full py-4 bg-white hover:bg-blue-600 hover:text-white text-black text-center font-black rounded-xl md:rounded-2xl transition duration-300 text-sm md:text-base">Tempah Slot</a>
+                    </div>
+                </div>
+                <!-- Testimoni 2 -->
+                <div class="bg-slate-900/40 p-8 md:p-10 rounded-[2.5rem] border border-slate-800 hover:border-blue-500/20 transition">
+                    <div class="flex text-yellow-500 mb-6 text-xl">⭐⭐⭐⭐⭐</div>
+                    <p class="text-slate-300 text-sm md:text-base leading-relaxed mb-8 italic">
+                        "Servis paling laju! Saya 'emergency' nak guna kereta balik Pagoh sebab kereta sendiri masuk bengkel. WhatsApp terus abang ni hantar depan rumah. Memang Awesome!"
+                    </p>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-10 h-10 bg-indigo-600/20 rounded-full flex items-center justify-center font-bold text-indigo-400">S</div>
+                        <div>
+                            <p class="text-sm font-bold text-white">Siti</p>
+                            <p class="text-xs text-slate-500 uppercase tracking-widest font-semibold">Pelajar UTHM Pagoh</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimoni 3 -->
+                <div class="bg-slate-900/40 p-8 md:p-10 rounded-[2.5rem] border border-slate-800 hover:border-blue-500/20 transition">
+                    <div class="flex text-yellow-500 mb-6 text-xl">⭐⭐⭐⭐⭐</div>
+                    <p class="text-slate-300 text-sm md:text-base leading-relaxed mb-8 italic">
+                        "Harga memang Adil. Tak ada deposit merapu-rapu. Owner pun peramah. Lepas ni kalau kawan-kawan dari KL datang Muar, memang saya suruh sewa sini je."
+                    </p>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-10 h-10 bg-emerald-600/20 rounded-full flex items-center justify-center font-bold text-emerald-400">M</div>
+                        <div>
+                            <p class="text-sm font-bold text-white">Abang Man</p>
+                            <p class="text-xs text-slate-500 uppercase tracking-widest font-semibold">Peniaga Pasar Maharani</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -368,64 +319,62 @@
     </section>
 
     <!-- Tawaran & Kelangkaan -->
-    <section id="promo" class="py-20 md:py-32 px-4 md:px-6">
-        <div class="max-w-4xl mx-auto text-center border-2 border-dashed border-blue-500/30 rounded-[2.5rem] md:rounded-[3.5rem] p-8 md:p-20 bg-blue-600/5 relative">
-            <div class="absolute -top-4 md:-top-6 left-1/2 -translate-x-1/2 bg-blue-600 px-4 md:px-6 py-1.5 md:py-2 rounded-full text-[8px] md:text-xs font-black tracking-[0.2em] text-white">FLASH DEAL</div>
-            
-            <h2 class="text-2xl md:text-5xl font-black mb-10 md:mb-12 tracking-tight text-white uppercase leading-tight">⚡ Promo Hujung Minggu! ⚡</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8 mb-12 md:mb-16">
-                <div class="bg-slate-900 p-6 md:p-8 rounded-[2rem] border border-slate-800 hover:border-blue-500/30 transition">
-                    <p class="text-3xl md:text-4xl mb-3 md:mb-4">🎁</p>
-                    <p class="text-base md:text-xl text-white font-black mb-2 uppercase tracking-tighter">PERCUMA Penghantaran</p>
-                    <p class="text-slate-500 text-xs md:text-sm">Terus ke pintu rumah anda bagi lokasi terpilih!</p>
+    <section id="promo" class="py-16 md:py-24 px-4 md:px-6">
+        <div class="max-w-4xl mx-auto text-center border-2 border-dashed border-blue-500/30 rounded-[3rem] p-10 md:p-16 bg-blue-600/5 relative shadow-xl">
+            <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-blue-600 px-6 py-2 rounded-full text-xs font-black tracking-widest text-white">FLASH DEAL</div>
+            <h2 class="text-3xl md:text-4xl font-black mb-10 text-white uppercase text-center">⚡ Promo Hujung Minggu! ⚡</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8 mb-10">
+                <div class="bg-slate-900 p-8 rounded-[2rem] border border-slate-800">
+                    <p class="text-4xl mb-4">🎁</p>
+                    <p class="text-lg md:text-xl font-black mb-2 uppercase text-white">PERCUMA Penghantaran</p>
+                    <p class="text-slate-400 text-sm md:text-base">Ke seluruh area Muar & Pagoh!</p>
                 </div>
-                <div class="bg-slate-900 p-6 md:p-8 rounded-[2rem] border border-slate-800 hover:border-blue-500/30 transition">
-                    <p class="text-3xl md:text-4xl mb-3 md:mb-4">🔥</p>
-                    <p class="text-base md:text-xl text-white font-black mb-2 uppercase tracking-tighter">DISKAUN 10%</p>
-                    <p class="text-slate-500 text-xs md:text-sm">Jimat lebih banyak untuk sewaan 3 hari ke atas!</p>
+                <div class="bg-slate-900 p-8 rounded-[2rem] border border-slate-800">
+                    <p class="text-4xl mb-4">🔥</p>
+                    <p class="text-lg md:text-xl font-black mb-2 uppercase text-white">DISKAUN 10%</p>
+                    <p class="text-slate-400 text-sm md:text-base">Jimat untuk sewaan 3 hari ke atas!</p>
                 </div>
             </div>
-
             <div class="max-w-md mx-auto">
-                <div class="flex justify-between text-[10px] md:text-xs font-bold mb-3 uppercase tracking-widest">
+                <div class="flex justify-between text-xs md:text-sm font-bold mb-3 uppercase tracking-wider">
                     <span class="text-slate-400">Slot Terisi: 8 / 10 orang</span>
-                    <span class="text-red-500 animate-pulse">2 Slot Promo Tinggal!</span>
+                    <span class="text-red-500 animate-pulse font-bold">Tinggal 2 Slot Promo!</span>
                 </div>
-                <div class="w-full h-2 md:h-3 bg-slate-800 rounded-full overflow-hidden">
-                    <div class="h-full bg-gradient-to-r from-blue-600 to-indigo-600 w-[80%]"></div>
+                <div class="w-full h-3 bg-slate-800 rounded-full overflow-hidden">
+                    <div class="h-full bg-blue-600 w-[80%]"></div>
                 </div>
-                <p class="mt-6 md:mt-8 text-slate-400 italic text-xs md:text-sm px-4">Siapa cepat, dia dapat. Jangan tunggu sampai slot penuh!</p>
+                <p class="mt-8 text-slate-400 italic text-sm md:text-base">Siapa cepat, dia dapat. Jangan tunggu sampai slot penuh!</p>
             </div>
         </div>
     </section>
 
     <!-- Final CTA -->
-    <section class="py-20 md:py-32 px-4 md:px-6 bg-gradient-to-br from-blue-700 to-indigo-800 text-white text-center relative overflow-hidden">
+    <section class="py-20 md:py-28 px-4 md:px-6 bg-gradient-to-br from-blue-700 to-indigo-800 text-white text-center relative overflow-hidden">
         <div class="absolute top-0 left-0 w-full h-full opacity-10 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
         <div class="max-w-4xl mx-auto relative z-10">
-            <h2 class="text-3xl md:text-7xl font-black mb-8 md:mb-10 tracking-tighter leading-tight uppercase">Siap Untuk Perjalanan <br class="hidden md:block">Yang Awesome?</h2>
-            <p class="text-base md:text-2xl text-blue-100 mb-10 md:mb-14 leading-relaxed max-w-2xl mx-auto px-4">
+            <h2 class="text-4xl md:text-7xl font-black mb-8 md:mb-10 uppercase leading-tight tracking-tighter">Siap Untuk Perjalanan <br>Yang Awesome?</h2>
+            <p class="text-lg md:text-2xl text-blue-100 mb-12 leading-relaxed max-w-3xl mx-auto px-4">
                 Tak payah pening kepala. Biar kami yang hantar kereta, anda cuma perlu destinasi sahaja.
             </p>
-            <a href="https://wa.me/60123456789" target="_blank" class="inline-block w-full sm:w-auto px-10 py-6 md:px-16 md:py-8 bg-white text-blue-700 font-black rounded-2xl md:rounded-[2rem] text-lg md:text-2xl hover:scale-105 transition-all transform shadow-2xl uppercase tracking-tighter">
+            <a href="https://wa.me/60123456789" target="_blank" class="inline-block px-12 py-6 bg-white text-blue-700 font-black rounded-2xl text-xl md:text-2xl hover:scale-105 transition shadow-[0_20px_50px_rgba(0,0,0,0.3)] uppercase tracking-tighter">
                 WHATSAPP BOOKING
             </a>
-            <p class="mt-8 md:mt-12 text-blue-200 font-bold italic tracking-wide text-xs md:text-base">
-                P/S: Jangan tunggu sampai saat akhir!
+            <p class="mt-8 text-blue-200 font-bold italic text-xs md:text-base uppercase tracking-widest">
+                P/S: Jangan tunggu sampai kempunan!
             </p>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-slate-950 py-12 md:py-16 px-6 border-t border-slate-900 text-center">
+    <footer class="bg-slate-950 py-12 px-6 border-t border-slate-900 text-center">
         <div class="max-w-7xl mx-auto">
-            <div class="flex flex-col items-center mb-8 md:mb-10">
-                <div class="w-10 h-10 md:w-12 md:h-12 bg-blue-600 rounded-xl flex items-center justify-center font-black text-xl md:text-2xl text-white mb-4">4A</div>
-                <span class="text-lg font-bold text-white tracking-widest uppercase">4A Car Rental</span>
-                <p class="text-slate-500 mt-2 text-xs md:text-sm italic px-4">"Kualiti Pemanduan Anda Adalah Maruah Kami."</p>
+            <div class="flex flex-col items-center mb-8">
+                <div class="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center font-black text-xl text-white mb-4">4A</div>
+                <span class="text-xl font-bold tracking-widest uppercase text-white">4A Car Rental Muar</span>
+                <p class="text-slate-500 mt-2 text-sm md:text-base italic px-6">"Kualiti Pemanduan Anda Adalah Maruah Kami."</p>
             </div>
-            <div class="w-16 md:w-20 h-0.5 md:h-1 bg-slate-900 mx-auto mb-8 md:mb-10"></div>
-            <p class="text-slate-700 text-[8px] md:text-[10px] font-bold uppercase tracking-[0.2em] md:tracking-[0.3em] px-4">
+            <div class="w-20 h-0.5 bg-slate-900 mx-auto mb-8"></div>
+            <p class="text-slate-700 text-[10px] md:text-xs font-bold uppercase tracking-[0.3em] px-4">
                 &copy; 2024 4A Car Rental Services. Hak Cipta Terpelihara.
             </p>
         </div>
